@@ -1,0 +1,7 @@
+<form action="/" method="get">
+  <ul>
+    <% Task.all.each do |task| %>
+      <li   list-style-type: none><label><input type="checkbox"/> <%= task.completed %><%= task.title %> <%= task.details %></label></li>
+    <% end %>
+  </ul>
+</form>
